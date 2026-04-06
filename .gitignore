@@ -1,0 +1,45 @@
+# Variables de entorno
+.env
+.env.local
+.env.*.local
+.env.development
+.env.production
+.env.test
+
+# Dependencias
+node_modules/
+
+# Build
+dist/
+build/
+out/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+
+# Sistema operativo
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.suo
+*.swp
+
+# Claves y certificados
+*.pem
+*.key
+*.cert
+*.p12
+
+# Caché
+.cache/
+.parcel-cache/
+.next/
+.nuxt/
+
+# Testing
+coverage/
