@@ -3,6 +3,7 @@ import cookieParser from 'cookie-parser'
 import cors from 'cors'
 import dotenv from 'dotenv'
 import moodRouter from './backend/routes/moods.js'
+import { habitRouter } from './backend/routes/habits.js'
 
 dotenv.config()
 
@@ -30,6 +31,7 @@ app.use((req, res, next) => {
 })
 
 app.use('/', moodRouter)
+app.use('/', habitRouter)
 
 const PUERTO = process.env.PORT ?? 2345
 
